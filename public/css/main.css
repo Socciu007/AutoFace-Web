@@ -1,0 +1,336 @@
+.title {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: 'VisbyRoundCF';
+}
+@font-face {
+  font-family: 'VisbyRoundCF';
+  font-style: normal;
+  font-weight: 300;
+  src: local('VisbyRoundCF'), url('/font/VisbyRoundCF-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'VisbyRoundCFMedium';
+  font-style: normal;
+  font-weight: 600;
+  src: local('VisbyRoundCF'), url('/font/VisbyRoundCF-Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'VisbyRoundCFBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('VisbyRoundCF'), url('/font/VisbyRoundCF-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lato'), url('/font/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LatoBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato'), url('/font/Lato-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LatoBlack';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato'), url('/font/Lato-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LatoLight';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato'), url('/font/Lato-Light.ttf') format('truetype');
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'VisbyRoundCF';
+  font-size: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+header {
+  margin: 2% 10%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+.auth-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(42, 134, 255, 0.5);
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+input::placeholder {
+  font-family: 'VisbyRoundCF';
+}
+select {
+  font-family: 'VisbyRoundCF';
+}
+td {
+  font-weight: 400;
+  font-size: 15px;
+  color: #01162b;
+}
+label {
+  color: #e7f3ff;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+td,
+label,
+th {
+  word-wrap: break-word;
+  text-align: left;
+  font-family: 'VisbyRoundCF';
+}
+.blur {
+  width: 100%;
+  height: 100%;
+  background-color: #4d4d4d;
+  opacity: 0.85;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+}
+ol,
+ul {
+  padding: 0;
+}
+/* Css swiper base */
+.swiper {
+  min-height: 650px;
+}
+/* Css a base */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+/* Css header */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-icon {
+  display: none;
+}
+.navbar_mobile {
+  display: none;
+}
+.navbar__left {
+  display: flex;
+  align-items: center;
+  float: left;
+  gap: 10%;
+  width: 50%;
+}
+.navbar__left a {
+  font-size: 20px;
+  font-family: 'VisbyRoundCFBold';
+  margin: 0;
+  cursor: pointer;
+  color: rgba(1, 22, 43, 0.5);
+}
+.navbar__left .logo {
+  font-family: 'VisbyRoundCFBold';
+  font-weight: 700;
+  font-size: 30px;
+  color: #01162b;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 6%;
+  width: 50%;
+}
+.navbar__right p {
+  margin: 0;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  z-index: 9999;
+}
+
+.selected-option {
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  border: 0;
+  background-image: url('/img/dropdown.png');
+  background-repeat: no-repeat;
+  background-position: left 11px bottom 13px;
+  color: rgba(1, 22, 43, 0.5);
+}
+
+.selected-option img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: -25%;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0px solid rgba(8, 35, 106, 0.25);
+  width: 92px;
+  border-top: none;
+  box-shadow: 0 4px 10px rgb(8 35 106 / 25%);
+  border-radius: 10px;
+  z-index: 9999;
+  background: #fff;
+}
+
+.options li {
+  cursor: pointer;
+  padding: 5px 20px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.options li span,
+.selected-option span {
+  font-family: 'VisbyRoundCFBold';
+  opacity: 0.8;
+  font-size: 20px;
+  color: rgba(1, 22, 43, 0.5);
+}
+.options li:hover {
+  background-color: rgba(25, 118, 210, 0.2);
+}
+.options li:hover:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.options li:hover:last-child {
+  border-radius: 0 0 10px 10px;
+}
+.navbar__right .login,
+.navbar__right .download {
+  color: #0866ff;
+  font-family: 'VisbyRoundCFBold';
+  cursor: pointer;
+  font-size: 20px;
+}
+.navbar__right .download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(8, 102, 255, 0.5);
+}
+.navbar__right .download img {
+  width: 10px;
+  height: 10px;
+}
+.navbar__right .download p {
+  font-weight: 500;
+  font-family: 'VisbyRoundCFBold';
+}
+
+.navbar_mobile {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+/* Css footer */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  background-color: #eef5ff;
+  padding: 2% 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .linkSocial {
+  float: left;
+}
+.footer .linkSocial p {
+  font-family: 'VisbyRoundCFBold';
+  font-size: 30px;
+}
+.footer .linkSocial .linkSocialItem {
+  display: flex;
+  gap: 20px;
+  height: 28px;
+  margin-top: 20px;
+}
+
+.footer .article {
+  display: flex;
+  justify-content: end;
+  gap: 100px;
+  margin-right: 10%;
+}
+.footer .article .article_item {
+  width: 80%;
+}
+.footer .article .article_item p {
+  font-family: 'VisbyRoundCFBold';
+  font-size: 25px;
+}
+.footer .article .article_item ul {
+  float: left;
+}
+.footer .article .article_item ul li {
+  list-style: none;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: left;
+}

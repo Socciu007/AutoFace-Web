@@ -1,0 +1,121 @@
+<!-- views/partials/header.ejs -->
+
+<div class="navbar">
+  <div class="navbar__left">
+    <a href="/" class="logo">Autoface</a>
+    <a class="hidden" href="#usecase">Use cases</a>
+    <a class="hidden" href="#instruction">How it works</a>
+  </div>
+  <div class="navbar__right hidden">
+    <div class="translate">
+      <div class="custom-select">
+        <div class="selected-option" id="selectedOption">
+          <img src="/img/icon_USA.png" alt="icon USA" />
+          <span>En</span>
+        </div>
+        <ul class="options">
+          <li data-value="En" onclick="selectOption('En', '/img/icon_USA.png')">
+            <img src="/img/icon_USA.png" alt="icon USA" />
+            <span>En</span>
+          </li>
+          <li data-value="Vi" onclick="selectOption('Vi', '/img/icon_VN.png')">
+            <img src="/img/icon_VN.png" alt="icon VN" />
+            <span>Vi</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="login">Login</p>
+    <button onclick="navigateToDownload()" class="download">
+      <p>Download</p>
+      <img src="/img/icon_download.png" alt="icon download" />
+    </button>
+  </div>
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  <div class="navbar_mobile">
+    <p class="login">Login</p>
+    <button onclick="navigateToDownload()" class="download">
+      <p>Download</p>
+      <img src="/img/icon_download.png" alt="icon download" />
+    </button>
+    <div class="translate">
+      <div class="custom-select" id="mobileCustomSelect">
+        <div class="selected-option" id="selectedOptionMobile">
+          <img src="/img/icon_USA.png" alt="icon USA" />
+          <span>En</span>
+        </div>
+        <ul class="options" id="mobileOptions">
+          <li data-value="En" onclick="selectMobileOption('En', '/img/icon_USA.png')">
+            <img src="/img/icon_USA.png" alt="icon USA" />
+            <span>En</span>
+          </li>
+          <li data-value="Vi" onclick="selectMobileOption('Vi', '/img/icon_VN.png')">
+            <img src="/img/icon_VN.png" alt="icon VN" />
+            <span>Vi</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function selectOption(value, iconSrc) {
+    document.getElementById('selectedOption').innerHTML = `<img src="${iconSrc}" alt="icon" /><span>${value}</span>`;
+    document.getElementById('language').value = value;
+    document.querySelector('.options').style.display = 'none';
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const customSelect = document.querySelector('.custom-select');
+    const optionsList = document.querySelector('.options');
+
+    customSelect.addEventListener('click', function () {
+      optionsList.style.display = optionsList.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!customSelect.contains(event.target)) {
+        optionsList.style.display = 'none';
+      }
+    });
+  });
+
+  function selectMobileOption(value, iconSrc) {
+    document.getElementById(
+      'selectedOptionMobile',
+    ).innerHTML = `<img src="${iconSrc}" alt="icon" /><span>${value}</span>`;
+    document.getElementById('languageMobile').value = value;
+    document.getElementById('mobileOptions').style.display = 'none';
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const mobileCustomSelect = document.getElementById('mobileCustomSelect');
+    const mobileOptionsList = document.getElementById('mobileOptions');
+
+    mobileCustomSelect.addEventListener('click', function () {
+      mobileOptionsList.style.display = mobileOptionsList.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!mobileCustomSelect.contains(event.target)) {
+        mobileOptionsList.style.display = 'none';
+      }
+    });
+  });
+
+  function toggleMenu() {
+    const mobileMenu = document.querySelector('.navbar_mobile');
+    mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+
+    const components = document.querySelectorAll('.hidden');
+    components.forEach((component) => {
+      component.style.display = mobileMenu.style.display === 'block' ? 'none' : '';
+    });
+  }
+
+  // Chuyển hướng sang /download
+  function navigateToDownload() {
+    window.location.href = '/download';
+  }
+</script>

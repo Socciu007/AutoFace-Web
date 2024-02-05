@@ -1,0 +1,318 @@
+/* Css about */
+#about {
+  margin-right: 10%;
+  display: flex;
+  padding-bottom: 100px;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+#about .aboutContent {
+  width: 50%;
+}
+.titleComponent {
+  padding: 6px 20px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgba(8, 102, 255, 0.1);
+  color: #0866ff;
+  font-family: 'Lato';
+  font-size: 22px;
+  margin: 0;
+}
+#about .aboutContent h1,
+#hidemyacc .hidemyaccContent h1,
+#usecase h1 {
+  font-family: 'LatoBold';
+  font-weight: 700;
+  font-size: 60px;
+  margin: 30px 0;
+}
+#about .aboutContent .detailContent,
+#hidemyacc .hidemyaccContent .detailContent {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 40px 0;
+  color: rgba(1, 22, 43, 0.7);
+}
+#about .downNow,
+#hidemyacc .downNow {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px 15px;
+  align-items: center;
+  background-color: #0866ff;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  margin-top: 50px;
+}
+
+#about .downNow p,
+#hidemyacc .downNow p {
+  font-family: 'VisbyRoundCFBold';
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+}
+#about .downNow img,
+#hidemyacc .downNow img {
+  width: 10px;
+  height: 10px;
+}
+
+/* css hidemyacc */
+#hidemyacc {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(244, 245, 255, 1), rgba(254, 254, 255, 1));
+  /* height: 500px; */
+  position: relative;
+}
+#hidemyacc .imgHidemyacc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #hidemyacc .imgHidemyacc img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
+#hidemyacc .hidemyaccContent {
+  margin-left: 10%;
+}
+#hidemyacc .hidemyaccContent .detailContent {
+  width: 65%;
+  margin-top: 3%;
+  margin-bottom: 0;
+  color: rgba(1, 22, 43, 0.7);
+}
+#hidemyacc .downNow {
+  background-color: #fff;
+  border: 1px solid rgba(8, 102, 255, 0.5);
+  margin: 3% 0;
+}
+#hidemyacc .downNow p {
+  color: #0866ff;
+}
+
+/* css usecase */
+#usecase {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f0f3ff;
+}
+#usecase h1 {
+  text-align: center;
+}
+#usecase .contentUCItem {
+  width: 500px;
+  box-shadow: 0 4px 10px rgb(8 35 106 / 25%);
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#usecase .contentUCItem:hover {
+  box-shadow: 1px 1px 1px 1px rgba(8, 102, 255, 0), 1px 0 1.5px 1px rgba(8, 102, 255, 1);
+}
+
+#usecase .contentUCItem .contentTitle {
+  font-family: 'LatoBold';
+  font-weight: 700;
+  font-size: 25px;
+}
+#usecase .contentUCItem .contentUC {
+  font-size: 20px;
+  color: rgba(1, 22, 43, 0.7);
+  letter-spacing: 1px;
+}
+#usecase .contentUCItem .option {
+  float: left;
+  display: flex;
+  gap: 10px;
+}
+#usecase .contentUCItem .option button {
+  border: 0;
+  padding: 8px 18px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgba(8, 102, 255, 0.1);
+  color: #0866ff;
+  font-family: 'Lato';
+  font-size: 15px;
+  margin: 0;
+  cursor: pointer;
+}
+
+#usecase .imgUsecase {
+  position: relative;
+  height: 720px;
+  margin: 0 10%;
+}
+#usecase .imgUsecase img {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+}
+#usecase .contentUCItem.itemfirst {
+  position: absolute;
+  top: 6%;
+  left: 20%;
+  transform: translate(-20%, -6%);
+}
+#usecase .contentUCItem.itemsecond {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  transform: translate(-5%, -10%);
+}
+#usecase .contentUCItem.itemthỉd {
+  position: absolute;
+  top: 75%;
+  left: 8%;
+  transform: translate(-8%, -55%);
+}
+#usecase .contentUCItem.itemfour {
+  position: absolute;
+  top: 85%;
+  right: 0;
+  transform: translate(0, -70%);
+}
+
+/* Css instruction */
+#instruction {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f0f3ff;
+}
+#instruction .titleIntruction {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 50px 0;
+}
+#instruction .titleIntruction h1 {
+  font-family: 'LatoBold';
+  font-weight: 700;
+  font-size: 60px;
+  margin: 0;
+}
+.swiper {
+  margin-top: 5px;
+  margin: 5px auto;
+  z-index: 1;
+}
+.swiper-slide img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px auto;
+  height: 400px;
+  width: 900px;
+  z-index: 1;
+}
+.swiper-slide .content {
+  position: absolute;
+  z-index: 1;
+  bottom: -20%;
+  transform: translate(-50%, 20%);
+  left: 50%;
+  text-align: center;
+}
+.swiper-slide .content h3 {
+  text-align: center;
+  font-weight: 'LatoBold';
+  font-weight: 700;
+  font-size: 40px;
+}
+.swiper-slide .content h6 {
+  text-align: center;
+  color: rgba(1, 22, 43, 0.7);
+  font-size: 20px;
+}
+.swiper .custom-button-prev,
+.swiper .custom-button-next {
+  z-index: 99;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -200%);
+  width: 50px;
+  height: 50px;
+}
+.swiper .custom-button-prev {
+  left: 10%;
+}
+.swiper .custom-button-next {
+  right: 10%;
+}
+.swiper .custom-button-prev img,
+.swiper .custom-button-next img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 15%;
+}
+
+/* Css freeTrial */
+#freeTrial {
+  background-color: #1c5dc8;
+  color: #fff;
+  padding: 50px 0;
+}
+#freeTrial h1 {
+  margin: 0;
+  text-align: center;
+  font-family: 'LatoBlack';
+  font-size: 60px;
+}
+#freeTrial .profile {
+  text-align: center;
+  font-family: 'LatoLight';
+  font-size: 60px;
+}
+#freeTrial .downNow {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px 15px;
+  align-items: center;
+  background-color: #eef5ff;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #0866ff;
+  margin: 10px auto;
+  font-family: 'VisbyRoundCFBold';
+  font-weight: 700;
+  font-size: 20px;
+  border: 0;
+}
+
+#freeTrial .downNow::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px 0px #eef5ff, 1.5px 0 1px 1px #eef5ff;
+}
