@@ -319,6 +319,9 @@
   }
   .footer .article {
     width: auto;
+    gap: 10px;
+    margin: 0;
+    margin-left: 5%;
   }
   #about {
     margin: 0 3%;
@@ -350,6 +353,9 @@
   #hidemyacc .hidemyaccContent .detailContent {
     width: 100%;
   }
+  #usecase .contentUCItem {
+    width: auto;
+  }
   #usecase .imgUsecase img {
     display: none;
   }
@@ -374,7 +380,7 @@
     bottom: 0;
     right: 0;
     transform: none;
-    margin: 1% 0;
+    margin: 1% 5%;
   }
   .downloadContent {
     margin: auto 5%;
@@ -386,8 +392,18 @@
     right: 1%;
   }
   .swiper-slide img {
-    scale: 0.8;
+    width: auto;
+    height: auto;
   }
+  .swiper-slide .content {
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    transform: translate(-50%, 25%);
+    left: 50%;
+    text-align: center;
+  }
+
   .navbar__right,
   .navbar_mobile {
     display: none;
@@ -427,6 +443,9 @@
   }
   .downloadContent {
     padding-top: 0;
+  }
+  #instruction .titleIntruction {
+    flex-direction: column;
   }
   .hidden {
     display: none;
