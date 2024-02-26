@@ -220,6 +220,15 @@
   /* width: 935px; */
   z-index: 1;
 }
+
+.swiper-slide img.sleepingWell {
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px auto;
+  height: 457px;
+  width: 935px;
+  z-index: 1;
+}
 .swiper-slide .content {
   position: absolute;
   z-index: 1;
