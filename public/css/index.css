@@ -2,7 +2,7 @@
 #about {
   margin-right: 10%;
   display: flex;
-  padding-bottom: 100px;
+  padding: 50px 0;
   gap: 50px;
   justify-content: space-between;
 }
@@ -17,7 +17,7 @@
   background-color: rgba(8, 102, 255, 0.1);
   color: #0866ff;
   font-family: 'Lato';
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
 }
 #about .aboutContent h1,
@@ -25,13 +25,13 @@
 #usecase h1 {
   font-family: 'LatoBold';
   font-weight: 700;
-  font-size: 60px;
+  font-size: 58px;
   margin: 30px 0;
 }
 #about .aboutContent .detailContent,
 #hidemyacc .hidemyaccContent .detailContent {
   font-weight: 100;
-  font-size: 20px;
+  font-size: 18px;
   margin: 40px 0;
   color: rgba(1, 22, 43, 0.7);
 }
@@ -127,10 +127,10 @@
 #usecase .contentUCItem .contentTitle {
   font-family: 'LatoBold';
   font-weight: 700;
-  font-size: 25px;
+  font-size: 23px;
 }
 #usecase .contentUCItem .contentUC {
-  font-size: 20px;
+  font-size: 18px;
   color: rgba(1, 22, 43, 0.7);
   letter-spacing: 1px;
 }
@@ -147,7 +147,7 @@
   background-color: rgba(8, 102, 255, 0.1);
   color: #0866ff;
   font-family: 'Lato';
-  font-size: 15px;
+  font-size: 13px;
   margin: 0;
   cursor: pointer;
 }
@@ -204,7 +204,7 @@
 #instruction .titleIntruction h1 {
   font-family: 'LatoBold';
   font-weight: 700;
-  font-size: 60px;
+  font-size: 58px;
   margin: 0;
 }
 .swiper {
@@ -232,12 +232,12 @@
   text-align: center;
   font-weight: 'LatoBold';
   font-weight: 700;
-  font-size: 40px;
+  font-size: 38px;
 }
 .swiper-slide .content h6 {
   text-align: center;
   color: rgba(1, 22, 43, 0.7);
-  font-size: 20px;
+  font-size: 18px;
 }
 .swiper .custom-button-prev,
 .swiper .custom-button-next {
@@ -280,12 +280,12 @@
   margin: 0;
   text-align: center;
   font-family: 'LatoBlack';
-  font-size: 60px;
+  font-size: 58px;
 }
 #freeTrial .profile {
   text-align: center;
   font-family: 'LatoLight';
-  font-size: 60px;
+  font-size: 58px;
 }
 #freeTrial .downNow {
   position: relative;
@@ -302,7 +302,7 @@
   margin: 10px auto;
   font-family: 'VisbyRoundCFBold';
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   border: 0;
 }
 

@@ -12,14 +12,13 @@
         </div>
         <div class="aboutContent">
           <span class="titleComponent facebookAuto">FACEBOOK AUTOMATION</span>
-          <h1>Unleash Earning Power</h1>
-          <h1 style="color: #0866ff">Effortlessly</h1>
+          <h1><%= __('Unleash Earning Power')%></h1>
+          <h1 style="color: #0866ff"><%= __('Effortlessly')%></h1>
           <p class="detailContent">
-            Scale your business with multiple Facebook accounts in just a few minutes. Effortlessly expand your business
-            and save substantial time and money, all through the convenience of your computer.
+            <%= __('Scale your business with multiple Facebook accounts in just a few minutes. Effortlessly expand your business and save substantial time and money, all through the convenience of your computer.')%>
           </p>
-          <button class="downNow">
-            <p>Get started for free, now</p>
+          <button class="downNow" onclick="navigateToDownload()">
+            <p><%= __('Get started for free, now')%></p>
             <img src="/img/icon_next.png" alt="icon next" />
           </button>
         </div>
@@ -27,14 +26,13 @@
 
       <div id="hidemyacc">
         <div class="hidemyaccContent">
-          <span class="titleComponent undetectable">UNDETECTABLE</span>
+          <span class="titleComponent undetectable"><%= __('UNDETECTABLE')%></span>
           <h1>Hidemyacc</h1>
           <p class="detailContent">
-            Based on the best anti-detect browser technology Hidemyacc, Autoface can run unlimited Facebook accounts
-            without being detected.
+            <%= __('Based on the best anti-detect browser technology Hidemyacc, Autoface can run unlimited Facebook accounts without being detected.')%>
           </p>
-          <button class="downNow" href="https://hidemyacc.com" target="_blank">
-            <p>Explore more</p>
+          <button class="downNow" href="https://hidemyacc.com" target="_blank" onclick="navigateToDownload('hidemyacc')">
+            <p><%= __('Explore more')%></p>
             <img src="/img/icon_nextBlue.png" alt="icon next" />
           </button>
         </div>
@@ -44,53 +42,49 @@
       </div>
 
       <div id="usecase">
-        <span class="titleComponent usecaseTitle">USE CASES</span>
-        <h1>What can be done with</h1>
+        <span class="titleComponent usecaseTitle"><%= __('USE CASES')%></span>
+        <h1><%= __('What can be done with')%></h1>
         <h1 style="color: #0866ff">Autoface?</h1>
         <div class="imgUsecase">
           <img src="/img/listProfile.png" alt="list profile" />
           <div class="listContentUC">
             <div class="contentUCItem itemfirst">
-              <p class="contentTitle">Manage Unlimited Accounts</p>
+              <p class="contentTitle"><%= __('Manage Unlimited Accounts')%></p>
               <p class="contentUC">
-                Efficiently manage and run multiple Facebook accounts at the same time using available scripts, ensuring
-                your accounts remain secure without checkpoints
+                <%= __('Efficiently manage and run multiple Facebook accounts at the same time using available scripts, ensuring your accounts remain secure without checkpoints')%>
               </p>
               <div class="option">
-                <button>Anti-detected</button>
-                <button>Secured</button>
+                <button><%= __('Anti-detected')%></button>
+                <button><%= __('Secured')%></button>
               </div>
             </div>
             <div class="contentUCItem itemsecond">
-              <p class="contentTitle">Achieve Marketing Goals</p>
+              <p class="contentTitle"><%= __('Achieve Marketing Goals')%></p>
               <p class="contentUC">
-                Guide targeted customers through strategic media messaging to boost brand awareness and influence the
-                purchasing decision-making process.
+                <%= __('Guide targeted customers through strategic media messaging to boost brand awareness and influence the purchasing decision-making process.')%>
               </p>
               <div class="option">
-                <button>Farming</button>
-                <button>Seeding</button>
+                <button><%= __('Farming')%></button>
+                <button><%= __('Seeding')%></button>
               </div>
             </div>
             <div class="contentUCItem itemthỉd">
-              <p class="contentTitle">Increase Revenue Streams</p>
+              <p class="contentTitle"><%= __('Increase Revenue Streams')%></p>
               <p class="contentUC">
-                Automatically add new friends and increase engagement on your profile or business fanpage, enabling you
-                to reach with more potential customers and boost visibility on Facebook.
+                <%= __('Automatically add new friends and increase engagement on your profile or business fanpage, enabling you to reach with more potential customers and boost visibility on Facebook.')%>
               </p>
               <div class="option">
-                <button>Boost</button>
-                <button>Branding</button>
+                <button><%= __('Boost')%></button>
+                <button><%= __('Branding')%></button>
               </div>
             </div>
             <div class="contentUCItem itemfour">
-              <p class="contentTitle">Reduce Manual Works</p>
+              <p class="contentTitle"><%= __('Reduce Manual Works')%></p>
               <p class="contentUC">
-                Simplify your tasks through automation, empowering you to optimize your business operations, save time,
-                and focus on driving growth and innovation
+                <%= __('Simplify your tasks through automation, empowering you to optimize your business operations, save time, and focus on driving growth and innovation')%>
               </p>
               <div class="option">
-                <button>Automation</button>
+                <button><%= __('Automation')%></button>
               </div>
             </div>
           </div>
@@ -98,10 +92,10 @@
       </div>
 
       <div id="instruction">
-        <span class="titleComponent usecaseTitle">INSTRUCTION</span>
+        <span class="titleComponent usecaseTitle"><%= __('INSTRUCTION')%></span>
         <div class="titleIntruction">
           <img src="/img/icon_youtubeRed.png" alt="" />
-          <h1>How it works?</h1>
+          <h1><%= __('How it works?')%></h1>
         </div>
         <div class="swiper">
           <!-- Additional required wrapper -->
@@ -110,29 +104,29 @@
             <div class="swiper-slide">
               <img src="/img/createScript.png" alt="Anh slide 1" />
               <div class="content">
-                <h3>Create your script</h3>
-                <h6>Without coding skill, you can freely create and edit your own automation script on Facebook</h6>
+                <h3><%= __('Create your script')%></h3>
+                <h6><%= __('Without coding skill, you can freely create and edit your own automation script on Facebook')%></h6>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="/img/automationSetting.png" alt="Anh slide 2" />
               <div class="content">
-                <h3>Automation Settings</h3>
-                <h6>Without coding skill, you can freely create and edit your own automation script on Facebook</h6>
+                <h3><%= __('Automation Settings')%></h3>
+                <h6><%= __('Without coding skill, you can freely create and edit your own automation script on Facebook')%></h6>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="/img/automationSetting_2.png" alt="Anh slide 2" />
               <div class="content">
-                <h3>Automation Settings</h3>
-                <h6>Without coding skill, you can freely create and edit your own automation script on Facebook</h6>
+                <h3><%= __('Automation Settings')%></h3>
+                <h6><%= __('Without coding skill, you can freely create and edit your own automation script on Facebook')%></h6>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="/img/sleepingWell.png" alt="Anh slide 3" />
               <div class="content">
-                <h3>Sleeping well</h3>
-                <h6>Without coding skill, you can freely create and edit your own automation script on Facebook</h6>
+                <h3><%= __('Sleeping well')%></h3>
+                <h6><%= __('Without coding skill, you can freely create and edit your own automation script on Facebook')%></h6>
               </div>
             </div>
           </div>
@@ -144,9 +138,9 @@
       </div>
 
       <div id="freeTrial">
-        <h1>FREE TRIAL</h1>
-        <p class="profile">with 50 profiles now !</p>
-        <button class="downNow">Get started for free <img src="/img/icon_nextBlue.png" alt="icon next" /></button>
+        <h1><%= __('FREE TRIAL')%></h1>
+        <p class="profile"><%= __('with 50 profiles now !')%></p>
+        <button class="downNow" onclick="navigateToDownload()"><%= __('Get started for free')%> <img src="/img/icon_nextBlue.png" alt="icon next" /></button>
       </div>
     </main>
     <footer><%- include ('../partials/footer') %></footer>

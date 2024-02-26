@@ -3,8 +3,8 @@
 <div class="navbar">
   <div class="navbar__left">
     <a href="/" class="logo">Autoface</a>
-    <a class="hidden" href="#usecase">Use cases</a>
-    <a class="hidden" href="#instruction">How it works</a>
+    <a class="hidden hide" href="#usecase"><%= __('Use cases')%></a>
+    <a class="hidden hide" href="#instruction"><%= __('How it works')%></a>
   </div>
   <div class="navbar__right hidden">
     <div class="translate">
@@ -14,11 +14,11 @@
           <span>En</span>
         </div>
         <ul class="options">
-          <li data-value="En" onclick="selectOption('En', '/img/icon_USA.png')">
+          <li data-value="En" onclick="selectOption('En', '/img/icon_USA.png')" href="/change-lang/en">
             <img src="/img/icon_USA.png" alt="icon USA" />
             <span>En</span>
           </li>
-          <li data-value="Vi" onclick="selectOption('Vi', '/img/icon_VN.png')">
+          <li data-value="Vi" onclick="selectOption('Vi', '/img/icon_VN.png')" href="/change-lang/vi">
             <img src="/img/icon_VN.png" alt="icon VN" />
             <span>Vi</span>
           </li>
@@ -27,15 +27,15 @@
     </div>
     <!-- <p class="login">Login</p> -->
     <button onclick="navigateToDownload()" class="download">
-      <p>Download</p>
+      <p><%= __('Download')%></p>
       <img src="/img/icon_download.png" alt="icon download" />
     </button>
   </div>
   <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
   <div class="navbar_mobile">
-    <p class="login">Login</p>
+    <p class="login"><%= __('Login')%></p>
     <button onclick="navigateToDownload()" class="download">
-      <p>Download</p>
+      <p><%= __('Download')%></p>
       <img src="/img/icon_download.png" alt="icon download" />
     </button>
     <div class="translate">
@@ -61,6 +61,11 @@
 
 <script>
   function selectOption(value, iconSrc) {
+    if (value == 'En') {
+      window.location.href = "/change-lang/en";
+    } else if (value == 'Vi') {
+      window.location.href = "/change-lang/vi";
+    }
     document.getElementById('selectedOption').innerHTML = `<img src="${iconSrc}" alt="icon" /><span>${value}</span>`;
     document.getElementById('language').value = value;
     document.querySelector('.options').style.display = 'none';
@@ -115,7 +120,11 @@
   }
 
   // Chuyển hướng sang /download
-  function navigateToDownload() {
-    window.location.href = '/download';
+  function navigateToDownload(url) {
+    if (url == 'hidemyacc') {
+      window.location.href = 'https://hidemyacc.com/';
+    } else {
+      window.location.href = '/download';
+    }
   }
 </script>
