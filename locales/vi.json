@@ -1,5 +1,5 @@
 {
-	"How it works": "Làm việc như thế nào?",
+	"How it works": "Làm thế nào nó hoạt động?",
 	"Use cases": "Use cases",
 	"Download": "Download",
 	"Login": "Login",
@@ -39,5 +39,9 @@
 	"Articles": "Articles",
 	"Term of service": "Term of service",
 	"Privacy policy": "Privacy policy",
-	"Refund policy": "Refund policy"
+	"Refund policy": "Refund policy",
+	"AVAILABLE FOR": "AVAILABLE FOR",
+	"WINDOWS": "WINDOWS",
+	"DOWNLOAD": "DOWNLOAD",
+	"Your browser does not support the video tag.": "Your browser does not support the video tag."
 }

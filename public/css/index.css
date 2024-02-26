@@ -216,8 +216,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin: 10px auto;
-  height: 400px;
-  width: 900px;
+  height: 456px;
+  /* width: 935px; */
   z-index: 1;
 }
 .swiper-slide .content {
@@ -267,7 +267,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 15%;
+  bottom: 5%;
 }
 
 /* Css freeTrial */

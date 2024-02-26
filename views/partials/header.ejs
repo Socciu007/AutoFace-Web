@@ -10,18 +10,26 @@
     <div class="translate">
       <div class="custom-select">
         <div class="selected-option" id="selectedOption">
-          <img src="/img/icon_USA.png" alt="icon USA" />
+          <% if(cookies.lang == 'en'){ %>
+            <img src="/img/icon_USA.png" alt="icon USA" />
           <span>En</span>
+            <% } else{ %>  
+              <img src="/img/icon_VN.png" alt="icon USA" />
+              <span>Vi</span>
+            <% } %>
         </div>
         <ul class="options">
-          <li data-value="En" onclick="selectOption('En', '/img/icon_USA.png')" href="/change-lang/en">
-            <img src="/img/icon_USA.png" alt="icon USA" />
-            <span>En</span>
-          </li>
-          <li data-value="Vi" onclick="selectOption('Vi', '/img/icon_VN.png')" href="/change-lang/vi">
-            <img src="/img/icon_VN.png" alt="icon VN" />
-            <span>Vi</span>
-          </li>
+        
+            <a data-value="En" href="/change-lang/en">
+              <img src="/img/icon_USA.png" alt="icon USA" />
+              <span>En</span>
+            </a>
+       
+            <a data-value="Vi" href="/change-lang/vi">
+              <img src="/img/icon_VN.png" alt="icon VN" />
+              <span>Vi</span>
+            </a>
+         
         </ul>
       </div>
     </div>
@@ -41,18 +49,23 @@
     <div class="translate">
       <div class="custom-select" id="mobileCustomSelect">
         <div class="selected-option" id="selectedOptionMobile">
-          <img src="/img/icon_USA.png" alt="icon USA" />
+          <% if(cookies.lang == 'en'){ %>
+            <img src="/img/icon_USA.png" alt="icon USA" />
           <span>En</span>
+            <% } else{ %>  
+              <img src="/img/icon_VN.png" alt="icon USA" />
+              <span>Vi</span>
+            <% } %>
         </div>
         <ul class="options" id="mobileOptions">
-          <li data-value="En" onclick="selectMobileOption('En', '/img/icon_USA.png')">
+          <a data-value="En" href="/change-lang/en">
             <img src="/img/icon_USA.png" alt="icon USA" />
             <span>En</span>
-          </li>
-          <li data-value="Vi" onclick="selectMobileOption('Vi', '/img/icon_VN.png')">
+          </a>
+          <a data-value="Vi" href="/change-lang/vi">
             <img src="/img/icon_VN.png" alt="icon VN" />
             <span>Vi</span>
-          </li>
+          </a>
         </ul>
       </div>
     </div>
@@ -60,17 +73,6 @@
 </div>
 
 <script>
-  function selectOption(value, iconSrc) {
-    if (value == 'En') {
-      window.location.href = "/change-lang/en";
-    } else if (value == 'Vi') {
-      window.location.href = "/change-lang/vi";
-    }
-    document.getElementById('selectedOption').innerHTML = `<img src="${iconSrc}" alt="icon" /><span>${value}</span>`;
-    document.getElementById('language').value = value;
-    document.querySelector('.options').style.display = 'none';
-  }
-
   document.addEventListener('DOMContentLoaded', function () {
     const customSelect = document.querySelector('.custom-select');
     const optionsList = document.querySelector('.options');

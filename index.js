@@ -14,8 +14,7 @@ const i18n = new I18n({
 app.use(i18n.init);
 
 app.use('/change-lang/:lang', (req, res) => {
-  res.cookie('lang', req.params.lang, { maxAge: 900000 });
-  console.log(req.params.lang);
+  res.cookie('lang', req.params.lang, { maxAge: 1000000 });
   res.redirect('back');
 });
 // set the view engine to ejs
@@ -26,11 +25,15 @@ app.set('view engine', 'ejs');
 
 // index page
 app.get('/', function (req, res) {
-  res.render('pages/index');
+  res.render('pages/index', {
+    cookies: req.cookies,
+  });
 });
 // index page
 app.get('/download', function (req, res) {
-  res.render('pages/download');
+  res.render('pages/download', {
+    cookies: req.cookies,
+  });
 });
 
 // use res.render to load up an ejs view file
