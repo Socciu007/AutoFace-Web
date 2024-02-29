@@ -1,0 +1,39 @@
+.container {
+  line-height: 1.8;
+  text-align: justify;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  outline: none;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  width: 900px;
+}
+
+header h1 {
+  margin-top: 70px;
+}
+
+h1,
+h2 {
+  color: #115bb7;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  text-align: center;
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+section {
+  background-color: #ffffff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+}

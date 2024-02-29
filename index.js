@@ -29,6 +29,7 @@ app.get('/', function (req, res) {
     cookies: req.cookies,
   });
 });
+
 // index page
 app.get('/download', function (req, res) {
   res.render('pages/download', {
@@ -36,6 +37,12 @@ app.get('/download', function (req, res) {
   });
 });
 
+// refund Vie page
+app.get('/refund-Vie', function (req, res) {
+  res.render('pages/refundPolicy/Vie', {
+    cookies: req.cookies,
+  });
+});
 // use res.render to load up an ejs view file
 
 app.listen(8080);
