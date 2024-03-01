@@ -30,7 +30,7 @@ header {
 h3,
 h4 {
   color: #115bb7;
-  font-family: 'Product Sans';
+  font-family: 'SVN-Product Sans' !important;
 }
 
 h3 {
@@ -38,7 +38,7 @@ h3 {
   margin-top: 10px;
 }
 p {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'SVN-Product Sans' !important;
 }
 section {
   background-color: #ffffff;

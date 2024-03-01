@@ -37,6 +37,24 @@ app.get('/download', function (req, res) {
   });
 });
 
+// refund Vie page
+app.get('/refund-Vie', function (req, res) {
+  res.render('pages/refundPolicy/Vie', {
+    cookies: req.cookies,
+  });
+});
+// refund Eng page
+app.get('/refund-Eng', function (req, res) {
+  res.render('pages/refundPolicy/Eng', {
+    cookies: req.cookies,
+  });
+});
+// refund Eng page
+app.get('/refund-Chi', function (req, res) {
+  res.render('pages/refundPolicy/Chi', {
+    cookies: req.cookies,
+  });
+});
 // use res.render to load up an ejs view file
 
 app.listen(8080);
