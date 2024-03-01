@@ -20,7 +20,7 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
-    "node-sass": "^9.0.0",
+    "node-sass": "^8.0.0",
     "nodemon": "^3.0.3"
   }
 }
