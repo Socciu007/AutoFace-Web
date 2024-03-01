@@ -338,11 +338,15 @@ a:focus {
 .footer .article .article_item p {
   font-family: 'VisbyRoundCFBold';
   font-size: 23px;
+  margin: 0;
 }
 .footer .article .article_item ul {
   float: left;
 }
 .footer .article .article_item ul li {
+  a {
+    color: rgb(1 22 43 / 70%);
+  }
   list-style: none;
   font-weight: 100;
   font-size: 18px;
