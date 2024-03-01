@@ -37,13 +37,13 @@ app.get('/download', function (req, res) {
   });
 });
 app.get('/term-of-service', function (req, res) {
-  res.render('pages/TermOfService/termOfServiceChTraditional', {
+  res.render('pages/TermOfService/termOfServiceEn', {
     cookies: req.cookies,
   });
 });
 // index page
 app.get('/private-policy', function (req, res) {
-  res.render('pages/PrivatePolicy/privatePolicyVi', {
+  res.render('pages/PrivatePolicy/privatePolicyEn', {
     cookies: req.cookies,
   });
 });
