@@ -36,7 +36,23 @@ app.get('/download', function (req, res) {
     cookies: req.cookies,
   });
 });
-
+app.get('/term-of-service', function (req, res) {
+  res.render('pages/TermOfService/termOfServiceChTraditional', {
+    cookies: req.cookies,
+  });
+});
+// index page
+app.get('/private-policy', function (req, res) {
+  res.render('pages/PrivatePolicy/privatePolicyVi', {
+    cookies: req.cookies,
+  });
+});
+// refund Vie page
+app.get('/refund-Vie', function (req, res) {
+  res.render('pages/refundPolicy/Vie', {
+    cookies: req.cookies,
+  });
+});
 // use res.render to load up an ejs view file
 
 app.listen(8080);
