@@ -3,21 +3,54 @@
 <div class="footer">
   <div class="linkSocial">
     <p>Autoface</p>
-    <div class="linkSocialItem">
+    <div class="linkSocialItem" style="align-items: center;">
       <img src="/img/icon_youtube.png" alt="icon youtube" />
       <img src="/img/icon_facebook.png" alt=" icon facebook" />
       <img src="/img/icon_X.png" alt="icon X" />
+      <ul style="    display: flex;
+      gap: 157px;
+      margin-left: 121px;
+      margin-bottom: -22px;">
+        <p><a href="/term-of-service">
+            <%= __('Document')%>
+          </a></p>
+        <p><a href="/term-of-service">
+            <%= __('Term of service')%>
+          </a></p>
+        <p><a href="/private-policy" style="margin-left: 2px">
+            <%= __('Privacy policy')%>
+          </a></p>
+        <p><a href="/refund-policy" style="margin-left: 2px">
+            <%= __('Refund policy')%>
+          </a></p>
+
+      </ul>
+
     </div>
   </div>
   <div class="article">
     <div class="article_item">
-      <p><%= __('Articles')%></p>
-      <ul>
-        <li><a href="/term-of-service"><%= __('Term of service')%></a></li>
-        <li><a href="/private-policy" style="margin-left: 2px"><%= __('Privacy policy')%></a></li>
-        <li><a href="/refund-policy" style="margin-left: 2px"><%= __('Refund policy')%></a></li>
-      </ul>
+      <!-- <div>
+        <p><%= __('Product')%></p>
+        <ul>
+          <li><a href="/term-of-service"><%= __('Document')%></a></li>
+        </ul>
+
+      </div>
+      <div>
+        <p><%= __('Articles')%></p>
+        <ul>
+          <li><a href="/term-of-service"><%= __('Document')%></a></li>
+          <li><a href="/term-of-service"><%= __('Term of service')%></a></li>
+          <li><a href="/private-policy" style="margin-left: 2px"><%= __('Privacy policy')%></a></li>
+          <li><a href="/refund-policy" style="margin-left: 2px"><%= __('Refund policy')%></a></li>
+        </ul>
+
+      </div> -->
+
     </div>
-  
+
+
+
   </div>
 </div>

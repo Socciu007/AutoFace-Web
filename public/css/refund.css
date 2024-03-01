@@ -31,7 +31,7 @@ h3,
 h4,
 .termOfServiceTitle {
   color: #115bb7;
-  font-family: 'SVN-Product Sans' !important;
+  font-family: 'Cabin Condensed' !important;
 }
 
 h4 {
@@ -43,7 +43,7 @@ h3 {
   margin-top: 10px;
 }
 p {
-  font-family: 'Product Sans';
+  font-family: 'Cabin Condensed';
 }
 section {
   background-color: #ffffff;

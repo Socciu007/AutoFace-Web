@@ -17,17 +17,17 @@
   border-radius: 30px;
   background-color: rgba(8, 102, 255, 0.1);
   color: #0866ff;
-  font-family: 'Lato';
+  font-family: 'Cabin Condensed';
   font-size: 20px;
   margin: 0;
 }
 .downloadContent .available .windows {
-  font-family: 'LatoBold';
+  font-family: 'Cabin Condensed Bold';
   font-weight: 700;
 }
 .downloadContent .autoface {
   text-align: center;
-  font-family: 'LatoBold';
+  font-family: 'Cabin Condensed Bold';
   font-weight: 700;
   font-size: 18px;
   margin: 2% 0;
@@ -44,7 +44,7 @@
   margin: 0 auto;
   color: #eef5ff;
   border: 0;
-  font-family: 'VisbyRoundCFBold';
+  font-family: 'Cabin Condensed Bold';
   font-size: 18px;
 }
 .downloadContent .hr {
@@ -58,7 +58,7 @@
   justify-content: center;
   align-items: center;
   gap: 25px;
-  font-family: 'LatoBold';
+  font-family: 'Cabin Condensed Bold';
   font-weight: 700;
   font-size: 58px;
   margin: 2% 0;

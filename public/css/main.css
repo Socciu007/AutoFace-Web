@@ -1,9 +1,16 @@
 .title {
   font-size: 14px;
   font-weight: 200;
-  font-family: 'VisbyRoundCF';
+  font-family: 'Cabin Condensed';
 }
-
+@font-face {
+  font-family: "Cabin Condensed Bold";
+  src: url("/font/Cabin-Bold.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Cabin Condensed";
+  src: url("/font/Cabin-Regular.ttf") format('truetype');
+}
 @font-face {
   font-family: "Product Sans";
   src: url("/font/ProductSansRegular.otf") format('truetype');
@@ -70,7 +77,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'VisbyRoundCF';
+  font-family: 'Cabin Condensed';
   font-size: 18px;
 }
 html {
@@ -107,10 +114,10 @@ select {
   outline: none;
 }
 input::placeholder {
-  font-family: 'VisbyRoundCF';
+  font-family: 'Cabin Condensed';
 }
 select {
-  font-family: 'VisbyRoundCF';
+  font-family: 'Cabin Condensed';
 }
 td {
   font-weight: 400;
@@ -133,7 +140,7 @@ label,
 th {
   word-wrap: break-word;
   text-align: left;
-  font-family: 'VisbyRoundCF';
+  font-family: 'Cabin Condensed';
 }
 .blur {
   width: 100%;
@@ -176,20 +183,21 @@ a:focus {
 }
 .navbar__left {
   display: flex;
-  align-items: center;
+  align-items: end;
   float: left;
   gap: 10%;
   width: 50%;
 }
 .navbar__left a {
   font-size: 16px;
-  font-family: 'VisbyRoundCFBold';
+  font-family: 'Cabin Condensed Bold';
   margin: 0;
   cursor: pointer;
   color: rgba(1, 22, 43, 0.5);
 }
 .navbar__left .logo {
-  font-family: 'VisbyRoundCFBold';
+  line-height: 35px;
+  font-family: 'Cabin Condensed Bold';
   font-weight: 700;
   font-size: 28px;
   color: #01162b;
@@ -258,7 +266,7 @@ a:focus {
 }
 .options a span,
 .selected-option span {
-  font-family: 'VisbyRoundCFBold';
+  font-family: 'Cabin Condensed Bold';
   opacity: 0.8;
   font-size: 18px;
   color: rgba(1, 22, 43, 0.5);
@@ -275,7 +283,7 @@ a:focus {
 .navbar__right .login,
 .navbar__right .download {
   color: #0866ff;
-  font-family: 'VisbyRoundCFBold';
+  font-family: 'Cabin Condensed Bold';
   cursor: pointer;
   font-size: 18px;
 }
@@ -293,7 +301,7 @@ a:focus {
 }
 .navbar__right .download p {
   font-weight: 500;
-  font-family: 'VisbyRoundCFBold';
+  font-family: 'Cabin Condensed Bold';
 }
 
 .navbar_mobile {
@@ -319,7 +327,7 @@ a:focus {
   float: left;
 }
 .footer .linkSocial p {
-  font-family: 'VisbyRoundCFBold';
+  font-family: 'Cabin Condensed Bold';
   font-size: 28px;
 }
 .footer .linkSocial .linkSocialItem {
@@ -334,9 +342,11 @@ a:focus {
 }
 .footer .article .article_item {
   width: 100%;
+  display: flex;
+  gap: 22px;
 }
 .footer .article .article_item p {
-  font-family: 'VisbyRoundCFBold';
+  font-family: 'Cabin Condensed Bold';
   font-size: 23px;
   margin: 0;
 }
