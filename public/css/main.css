@@ -363,6 +363,7 @@ a:focus {
     gap: 12px;
     width: 10%;
     img {
+      cursor: pointer;
       height: 22px;
     }
   }
