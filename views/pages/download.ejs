@@ -24,10 +24,7 @@
           <%= __('How it works?')%>
         </h1>
         <div class="video">
-          <video width="320" height="240" controls>
-            <source src="https://youtu.be/SqPWsY82cAw?si=7QM19tn6kbYfsNNU" type="video" />
-            <%= __('Your browser does not support the video tag.')%>
-          </video>
+          <iframe src="https://www.youtube.com/embed/YnAXb5REuyY?si=sQqqR5zer-GusZo3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </main>
@@ -37,7 +34,6 @@
 <script>
   // Chuyển hướng sang /download
   function navigateToLinkDownload() {
-
     window.location.href = 'https://drive.google.com/file/d/1FfqxY2L3jAYBsNv61b6KkCIEtIZkRLd9/view?usp=sharing';
   }
 </script>
