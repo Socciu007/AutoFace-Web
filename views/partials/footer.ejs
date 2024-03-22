@@ -31,11 +31,19 @@
                 <%= __('Refund policy')%>
               </a></p>
       </ul>
-      <div class="img">
-        <img src="/img/icon_youtube.png" alt="icon youtube" onclick="navigateToSocial('youtube')" />
-        <img src="/img/icon_facebook.png" alt=" icon facebook" onclick="navigateToSocial('facebook')" />
-        <img src="/img/icon_X.png" alt="icon X" onclick="navigateToSocial('twitter')" />
-      </div>
+      <% if(cookies.lang=='vi' ){ %>
+        <div class="img">
+          <img src="/img/icon_youtube.png" alt="icon youtube" onclick="navigateToSocialVN('youtube')" />
+          <img src="/img/icon_facebook.png" alt=" icon facebook" onclick="navigateToSocialVN('facebook')" />
+          <img src="/img/icon_X.png" alt="icon X" onclick="navigateToSocialVN('twitter')" />
+        </div>
+        <% } else{ %>
+          <div class="img">
+            <img src="/img/icon_youtube.png" alt="icon youtube" onclick="navigateToSocial('youtube')" />
+            <img src="/img/icon_facebook.png" alt=" icon facebook" onclick="navigateToSocial('facebook')" />
+            <img src="/img/icon_X.png" alt="icon X" onclick="navigateToSocial('twitter')" />
+          </div>
+          <% } %>
     </div>
   </div>
   <div class="article">
@@ -46,6 +54,7 @@
 <script>
   // Chuyển hướng sang /download
   function navigateToSocial(type) {
+   
     if (type == 'facebook') {
       window.location.href = 'https://www.facebook.com/autoface.io';
     } else if (type === 'youtube') {
@@ -54,4 +63,14 @@
       window.location.href = 'https://twitter.com/Autoface2024'
     }
   }
+
+  function navigateToSocialVN(type) {
+   if (type == 'facebook') {
+     window.location.href = 'https://www.facebook.com/autoface.io';
+   } else if (type === 'youtube') {
+     window.location.href = 'https://www.youtube.com/@AutoFace-VN';
+   } else if (type === 'twitter') {
+     window.location.href = 'https://twitter.com/Autoface2024'
+   }
+ }
 </script>
