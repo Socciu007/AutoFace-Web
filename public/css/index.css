@@ -2,7 +2,7 @@
 #about {
   margin-right: 10%;
   display: flex;
-  padding: 50px 0;
+  padding: 50px 12%;
   gap: 50px;
   justify-content: space-between;
   .imgAbout {
@@ -69,7 +69,7 @@
 
 /* css hidemyacc */
 #hidemyacc {
-  padding: 50px 0;
+  padding: 50px 12%;
   display: flex;
   justify-content: space-between;
   background: linear-gradient(180deg, rgba(244, 245, 255, 1), rgba(254, 254, 255, 1));
@@ -108,7 +108,7 @@
 /* css usecase */
 #usecase {
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 12%;
   background-color: #f0f3ff;
 }
 #usecase h1 {
@@ -196,7 +196,7 @@
 /* Css instruction */
 #instruction {
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 12%;
   background-color: #f0f3ff;
 }
 #instruction .titleIntruction {
