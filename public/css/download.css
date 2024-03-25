@@ -63,7 +63,7 @@
   font-size: 58px;
   margin: 2% 0;
 }
-.downloadContent .video video {
+.downloadContent .video iframe {
   margin: 0 auto;
   width: 756px;
   height: 406px;
