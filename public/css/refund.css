@@ -44,6 +44,7 @@ h3 {
 }
 p {
   font-family: 'Cabin Condensed';
+  text-align: justify !important;
 }
 section {
   background-color: #ffffff;
