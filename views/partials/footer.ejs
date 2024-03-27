@@ -17,17 +17,17 @@
             </a>
         </p>
         <% } else { %>
-          <a href="https://autofaces-organization.gitbook.io/autoface-documents-en/">
+          <a href="https://autofaces-organization.gitbook.io/autoface-documents-en/" target="_blank">
             <%= __('Document')%>
           </a></p>
           <% } %>
-            <p><a href="/term-of-service">
+            <p><a href="/term-of-service" target="_blank">
                 <%= __('Terms of service')%>
               </a></p>
-            <p><a href="/private-policy" style="margin-left: 2px">
+            <p><a href="/private-policy" style="margin-left: 2px" target="_blank">
                 <%= __('Privacy policy')%>
               </a></p>
-            <p><a href="/refund-policy" style="margin-left: 2px">
+            <p><a href="/refund-policy" style="margin-left: 2px" target="_blank">
                 <%= __('Refund policy')%>
               </a></p>
       </ul>
@@ -56,21 +56,31 @@
   function navigateToSocial(type) {
    
     if (type == 'facebook') {
-      window.location.href = 'https://www.facebook.com/autoface.io';
+      var newTab = window.open('https://www.facebook.com/autoface.io', '_blank');
+      newTab.focus();
+      // window.location.href = 'https://www.facebook.com/autoface.io';
     } else if (type === 'youtube') {
-      window.location.href = 'https://www.youtube.com/channel/UC5iUsx3xHSQV97mp6g4-pIg';
+      var newTab = window.open('https://www.youtube.com/channel/UC5iUsx3xHSQV97mp6g4-pIg', '_blank');
+      newTab.focus();
+      // window.location.href = 'https://www.youtube.com/channel/UC5iUsx3xHSQV97mp6g4-pIg';
     } else if (type === 'twitter') {
-      window.location.href = 'https://twitter.com/Autoface2024'
+      var newTab = window.open('https://twitter.com/Autoface2024', '_blank');
+      newTab.focus();
+      // window.location.href = 'https://twitter.com/Autoface2024'
     }
   }
 
   function navigateToSocialVN(type) {
    if (type == 'facebook') {
-     window.location.href = 'https://www.facebook.com/autoface.io';
+    var newTab = window.open('https://www.facebook.com/autoface.io', '_blank');
+      newTab.focus();
    } else if (type === 'youtube') {
-     window.location.href = 'https://www.youtube.com/@AutoFace-VN';
+    var newTab = window.open('https://www.youtube.com/@AutoFace-VN', '_blank');
+      newTab.focus();
+    //  window.location.href = 'https://www.youtube.com/@AutoFace-VN';
    } else if (type === 'twitter') {
-     window.location.href = 'https://twitter.com/Autoface2024'
+    var newTab = window.open('https://twitter.com/Autoface2024', '_blank');
+      newTab.focus();
    }
  }
 </script>

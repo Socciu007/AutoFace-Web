@@ -22,6 +22,10 @@
   -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 6% 8%;
+  p {
+    font-family: 'Cabin Condensed';
+    text-align: justify;
+  }
 }
 header {
   margin: 0;
@@ -41,10 +45,6 @@ h4 {
 h3 {
   text-align: center;
   margin-top: 10px;
-}
-p {
-  font-family: 'Cabin Condensed';
-  text-align: justify !important;
 }
 section {
   background-color: #ffffff;
