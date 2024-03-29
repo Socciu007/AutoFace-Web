@@ -3,6 +3,9 @@
   header {
     margin: 2% 3% 5% 3%;
   }
+  .titleComponent {
+    font-size: 18px;
+}
 
   .footer {
     padding: 4%;
@@ -19,10 +22,10 @@
   }
 
   #about .imgAbout {
-    width: 50%;
+    width: 70%;
 
     img {
-      height: 387px;
+      height: 323px;
     }
   }
 
