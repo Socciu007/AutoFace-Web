@@ -350,28 +350,28 @@
   #usecase .contentUCItem.itemfirst {
     position: absolute;
     top: 11%;
-    left: -10vw;
+    left: -5vw;
     transform: translate(5vw, -6%);
   }
 
   #usecase .contentUCItem.itemsecond {
     position: absolute;
     top: 15%;
-    right: -12vw;
+    right: -7vw;
     transform: translate(-3vw, -10%);
   }
 
   #usecase .contentUCItem.itemthỉd {
     position: absolute;
     top: 90%;
-    left: -12vw;
+    left: -7vw;
     transform: translate(3vw, -95%);
   }
 
   #usecase .contentUCItem.itemfour {
     position: absolute;
     top: 95%;
-    right: -10vw;
+    right: -5vw;
     transform: translate(-5vw, -100%);
   }
 }
