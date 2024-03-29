@@ -170,26 +170,26 @@
 }
 #usecase .contentUCItem.itemfirst {
   position: absolute;
-  top: 6%;
-  left: 20%;
-  transform: translate(-20%, -6%);
+  top: 5%;
+  left: -5%;
+  transform: translate(-20%, -5%);
 }
 #usecase .contentUCItem.itemsecond {
   position: absolute;
   top: 10%;
-  right: -5%;
+  right: -17%;
   transform: translate(-5%, -10%);
 }
 #usecase .contentUCItem.itemthỉd {
   position: absolute;
-  top: 75%;
-  left: 8%;
+  top: 70%;
+  left: -15%;
   transform: translate(-8%, -55%);
 }
 #usecase .contentUCItem.itemfour {
   position: absolute;
-  top: 85%;
-  right: 0;
+  top: 80%;
+  right: -105px;
   transform: translate(0, -70%);
 }
 
